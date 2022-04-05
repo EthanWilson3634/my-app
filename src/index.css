@@ -36,10 +36,6 @@ body {
     outline: none;
   }
   
-  .kbd-navigation .square:focus {
-    background: rgb(104, 16, 16);
-  }
-  
   .game {
     display: flex;
     flex-direction: row;
