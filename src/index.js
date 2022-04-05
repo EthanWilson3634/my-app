@@ -4,8 +4,13 @@ import './index.css';
 
 class HelloMessage extends React.Component {
   render() {
-    return <div>Hello {this.props.name}</div>;
+    return React.createElement(
+      "div",
+      null,
+      "Hello ",
+      this.props.name
+    );
   }
 }
 
-root.render(<HelloMessage name="Ethan"/>);
+root.render(React.createElement(HelloMessage, {name: "Ethan"}));
